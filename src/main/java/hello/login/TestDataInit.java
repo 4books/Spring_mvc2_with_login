@@ -31,10 +31,10 @@ public class TestDataInit {
         memberRepository.save(member);
 
         Member member2 = new Member();
-        member.setLoginId("test2");
-        member.setPassword("test!");
-        member.setName("테스터2");
-        memberRepository.save(member);
+        member2.setLoginId("test2");
+        member2.setPassword("test!");
+        member2.setName("테스터2");
+        memberRepository.save(member2);
     }
 
 }

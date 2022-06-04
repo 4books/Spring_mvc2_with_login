@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Repository
 public class MemberRepository {
 
-    private static Map<Long, Member> store = new ConcurrentHashMap<>();
+    private static final Map<Long, Member> store = new ConcurrentHashMap<>();
     private static long sequence = 0L;
 
     public Member save(Member member) {
